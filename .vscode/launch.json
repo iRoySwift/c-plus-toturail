@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "name": "Debug (Make target)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build (make)",
+      "terminal": "integrated",
+      "env": { "LANG": "zh_CN.UTF-8" }
+    },
+    {
+      "name": "Debug (CMake target)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${command:cmake.launchTargetPath}",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "CMake: build",
+      "terminal": "integrated",
+      "env": { "LANG": "zh_CN.UTF-8" }
+    }
+  ],
+  "version": "2.0.0"
+}
