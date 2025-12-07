@@ -4,7 +4,7 @@
       "name": "Debug (Make target)",
       "type": "lldb",
       "request": "launch",
-      "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+      "program": "${workspaceFolder}/build/make/${fileBasenameNoExtension}",
       "args": [],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "Build (make)",

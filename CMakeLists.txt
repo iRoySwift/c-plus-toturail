@@ -17,6 +17,10 @@ elseif (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
 endif()
 
 # Project sources --- list targets explicitly
+add_executable(algorithm
+  ${CMAKE_SOURCE_DIR}/base/algorithm/src/main.cpp
+)
+
 add_executable(hello_world
   ${CMAKE_SOURCE_DIR}/base/hello_world/src/main.cpp
 )

@@ -7,6 +7,21 @@
       "command": "make",
       "group": { "kind": "build", "isDefault": true },
       "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "CMake: configure",
+      "type": "shell",
+      "command": "cmake -S . -B build/default",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "CMake: build",
+      "type": "shell",
+      "command": "cmake --build build/default",
+      "group": "build",
+      "problemMatcher": [],
+      "dependsOn": "CMake: configure"
     }
   ]
 }
