@@ -25,4 +25,8 @@ add_executable(hello_world
   ${CMAKE_SOURCE_DIR}/base/hello_world/src/main.cpp
 )
 
+add_executable(main
+  ${CMAKE_SOURCE_DIR}/project/src/main.cpp
+)
+
 message(STATUS "Configured targets: hello_world")
